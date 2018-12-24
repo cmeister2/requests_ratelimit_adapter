@@ -22,7 +22,7 @@ deploy:
   distributions: sdist bdist_wheel
   user: cmeister2
   password:
-    secure: PLEASE_REPLACE_ME
+    secure: wne3cmD3Jy1nOGyCqrQnrWA8Dfc4lHDOyR3+sq6y/KHUSaDNEm64XGO1KVj8/shUNopCwBhGf/n2kTPRV3e0vS3Fa2CScP2mjBoeWHKj1WOgBpTy72GBoBrkCXcMrugyqPkF2y7BieaJ6ipg/axLBh+c1XS42+umcg1M7LXq/8+z8dsFK/a+GgHu/wcdRqPPYZ+l4pbg6EF5ocuMG4kgWV1VEG6foxhIt8GKmgymdWIFinVw0McAzThGhLr88I3GSttZAVpYXr74/agZl9yTH3sjiy09fu7/SJU/Y4gkG+V9US/ENWoPBxj6zBvQnVW1t+FJYw1NbmZ6TYOv7tRr3PnpixfuyEs3y3jEP2E6WYZJyAbFG+VYCI27+YofZV3l8ezMPCiZCqKPRBkTOokc96NdxoFercE5Pz4ADZwORrvhH5Qo4Tq7LAGR5i9WNyxz6bcOtkA6lGcbl50K5CCXzU5ekbvK5b00UYKLNJhvJup1bzPL2rK/1MCAFJt7ZId+mH0kBYLuEXYR4nF4x7EBTpZMMZr+F7KKXGaqeITfK6xh6c5YwTBh0aT7rtZgA5ywp8vgZUjhP0tIrZSzLkxh6bJ/AT8q218oTY4FWIp+J4/eeGtpRIccHLhaNP1HJy6SIsh7Kqo6x2WQJMMaxAcYI8tCC/XiKvPGxTiSArBtkEQ=
   on:
     tags: true
     repo: cmeister2/requests_ratelimit_adapter
