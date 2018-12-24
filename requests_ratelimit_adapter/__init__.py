@@ -4,7 +4,7 @@
 
 __author__ = """Max Dymond"""
 __email__ = 'cmeister2@gmail.com'
-__version__ = '0.1.1'
+__version__ = '0.1.2'
 
 from .requests_ratelimit_adapter import RateLimitAdapter
 
