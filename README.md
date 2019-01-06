@@ -11,16 +11,12 @@ A ratelimiting Session adapter for requests.
 
 ## Example
 
-    >>> from requests_ratelimit_adapter import RateLimitAdapter
-    >>> from requests.adapters import HTTPAdapter
+    >>> from requests_ratelimit_adapter import HTTPRateLimitAdapter
     >>> import requests
     >>> import time
 
-    >>> # Create an HTTP adapter.
-    >>> http = HTTPAdapter()
-
     >>> # Create a rate limiting adapter
-    >>> rate_limiter = RateLimitAdapter(adapter=http, calls=1, period=1)
+    >>> rate_limiter = HTTPRateLimitAdapter(calls=1, period=1)
 
     >>> s = requests.Session()
     >>> s.mount("https://", rate_limiter)

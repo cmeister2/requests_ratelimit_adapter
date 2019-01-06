@@ -2,7 +2,7 @@
 
 """Main module for ratelimiting request adapter."""
 
-from requests.adapters import BaseAdapter
+from requests.adapters import BaseAdapter, HTTPAdapter
 import time
 import threading
 import logging
@@ -137,3 +137,20 @@ class RateLimitAdapter(BaseAdapter):
     def close(self):
         """Clean up adapter specific items."""
         self.adapter.close()
+
+
+class HTTPRateLimitAdapter(RateLimitAdapter):
+    """Adapter which rate limits HTTP requests."""
+
+    def __init__(self,
+                 calls=15,
+                 period=900.0):
+        """Construct an HTTPRateLimitAdapter.
+
+        Args:
+            calls (int): The maximum number of requests allowed in `period` seconds.
+            period (float): The time period during which requests are totalled. Once one time period expires and another
+                begins, the number of admitted requests is reset.
+        """
+        adapter = HTTPAdapter()
+        super(HTTPRateLimitAdapter, self).__init__(adapter, calls, period)
